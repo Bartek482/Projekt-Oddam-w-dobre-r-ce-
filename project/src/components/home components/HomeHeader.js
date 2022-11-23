@@ -2,7 +2,6 @@ import React from "react";
 import Decoration from "../../assets/Decoration.svg"
 export function HomeHeader () {
     return (
-        <>
             <div className='home-header'>
                 <div className='background-header'></div>
                 <div className='function-header'>
@@ -28,6 +27,5 @@ export function HomeHeader () {
                     </ul>
                 </div>
             </div>
-        </>
     )
 }
