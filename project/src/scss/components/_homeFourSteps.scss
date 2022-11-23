@@ -1,0 +1,58 @@
+.home-four-steps {
+  max-width: 1850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.four-steps__container {
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1850px;
+  height: 315px;
+  color: $color-gray;
+  line-height: 20px;
+}
+
+.four-steps__info {
+  width: 175px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.four-steps-text__decoration {
+  width: 70px;
+  height: 2px;
+  background-color: $color-light-gray;
+  margin-top: 10px;
+}
+
+.four-steps__text {
+  margin-top: 10px;
+}
+
+.four-steps__title {
+  font-size: 36px;
+}
+
+.four-steps-header {
+  margin-top: 60px;
+}
+
+.four-steps__decoration {
+  transform: translateX(80px);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.four-steps__button {
+  transform: translateX(80px);
+}

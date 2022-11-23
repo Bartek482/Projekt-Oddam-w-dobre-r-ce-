@@ -9,13 +9,13 @@ export function HomeHeader () {
                             <li className='login-button'>Zaloguj</li>
                             <li className='login-button'>Załóż konto</li>
                     </ul>
-                    <ul className='nav-buttons'>
-                            <li className='header-button__small'>Start</li>
-                            <li className='header-button__small'>O co chodzi?</li>
-                            <li className='header-button__small'>O nas</li>
-                            <li className='header-button__small'>Fundacja i organizacje</li>
-                            <li className='header-button__small'>Kontakt</li>
-                    </ul>
+                    <nav className='nav-buttons'>
+                            <a href='#' className='header-button__small'>Start</a>
+                            <a href='#o-co-chodzi' className='header-button__small'>O co chodzi?</a>
+                            <a href='#' className='header-button__small'>O nas</a>
+                            <a href='#' className='header-button__small'>Fundacja i organizacje</a>
+                            <a href='#' className='header-button__small'>Kontakt</a>
+                    </nav>
                     <div className='header-text'>
                         <h1>Zacznij pomagać!</h1>
                         <h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
