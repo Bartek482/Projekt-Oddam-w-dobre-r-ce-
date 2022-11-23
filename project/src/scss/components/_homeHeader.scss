@@ -1,0 +1,91 @@
+.home-header {
+  max-width: 1850px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.background-header {
+  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 850px;
+
+}
+
+.function-header {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  margin-right: 88px;
+}
+
+.login_and_register {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 16px;
+  margin-top: 40px;
+  color: $color-light-gray;
+}
+
+.login-button {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid white;
+  margin-right: 20px;
+
+  &:hover {
+    border: 1px solid $color-yellow;
+  }
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  font-size: 18px;
+}
+.header-button__small {
+  padding: 8px 16px;
+  border: 1px solid white;
+  margin-right: 20px;
+  &:hover {
+    border: 1px solid $color-gray;
+  }
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 36px;
+  line-height: 48px;
+  color: $color-gray;
+}
+
+.header-decoration {
+  padding-top: 26px;
+  align-self: center;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 500px;
+  margin-top: 60px;
+  color: $color-gray;
+
+}
+
+.header-button__big {
+  width: 300px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 20px 0;
+  margin: 10px;
+  border: 1px solid $color-gray;
+  text-align: center;
+}

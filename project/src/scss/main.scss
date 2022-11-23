@@ -1,2 +1,10 @@
 @import "/src/settings/colors";
 @import "/src/settings/fonts";
+@import "/src/scss/components/home";
+
+@import "/src/settings/colors";
+@import "/src/settings/fonts";
+
+body {
+  font-family: $font-base;
+}
