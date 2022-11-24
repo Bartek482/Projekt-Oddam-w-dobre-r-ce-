@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import Decoration from "../../assets/Decoration.svg"
 import Shirt from "../../assets/Icon-1.svg"
 import Bag from "../../assets/Icon-2.svg"
@@ -39,7 +40,7 @@ export function HomeFourSteps() {
                 </div>
             </div>
             <ul className='header-buttons'>
-                <li className='header-button__big four-steps__button'>Oddaj rzeczy</li>
+                <Link to='/login' className='header-button__big four-steps__button'>Oddaj rzeczy</Link>
             </ul>
         </div>
     )
