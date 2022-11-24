@@ -4,7 +4,7 @@ import Signature from "../../assets/Signature.svg"
 
 export function HomeAboutUs() {
     return (
-        <div className='home-about-us'>
+        <div id='o-nas' className='home-about-us'>
             <div className='about-us__container'>
                 <div className='about-us__content'>
                     <div className='about-us__header'>

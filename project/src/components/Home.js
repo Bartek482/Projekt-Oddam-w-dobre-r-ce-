@@ -3,6 +3,7 @@ import { HomeHeader } from "./home components/HomeHeader";
 import { HomeThreeColumns } from "./home components/HomeThreeColumns";
 import { HomeFourSteps } from "./home components/HomeFourSteps";
 import { HomeAboutUs } from "./home components/HomeAboutUs";
+import { HomeWhoWeHelp } from "./home components/HomeWhoWeHelp";
 
 export function Home () {
     return (
@@ -11,6 +12,7 @@ export function Home () {
             <HomeThreeColumns/>
             <HomeFourSteps/>
             <HomeAboutUs />
+            <HomeWhoWeHelp />
         </>
     )
 }

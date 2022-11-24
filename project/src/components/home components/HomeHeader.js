@@ -13,7 +13,7 @@ export function HomeHeader () {
                     <nav className='nav-buttons'>
                             <a href='#' className='header-button__small'>Start</a>
                             <a href='#o-co-chodzi' className='header-button__small'>O co chodzi?</a>
-                            <a href='#' className='header-button__small'>O nas</a>
+                            <a href='#o-nas' className='header-button__small'>O nas</a>
                             <a href='#' className='header-button__small'>Fundacja i organizacje</a>
                             <a href='#' className='header-button__small'>Kontakt</a>
                     </nav>

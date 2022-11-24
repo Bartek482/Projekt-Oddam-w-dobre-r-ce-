@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import Decoration from "../assets/Decoration.svg"
 
 export function Login() {
+
+    const [email, setEmail] = useState(null);
+    const [password, setPassword] = useState(null);
+
+    const handleInputChange = (e) => {
+        const {id, value} = e.target;
+        if (id === 'email') {
+            setEmail(value);
+        }
+        if (id === 'password') {
+            setPassword(value);
+        }
+    }
+    const loginHandler = () => {
+        let obj = {
+            email: email,
+            password: password
+        }
+        if (password.length <= 6) {
+            console.log('hasło za krotkie');
+        } else {
+            console.log('wszystko ok');
+        }
+    }
+
     return (
         <div className='login-site'>
             <div className='function-header'>
@@ -22,13 +47,13 @@ export function Login() {
                 <div><img src={Decoration}/></div>
                 <div className='login-box'>
                     <label className='login-label' htmlFor='email'>Email</label>
-                    <input className="inputs" id='email' type='email' required/>
+                    <input className="inputs" id='email' type='email' value={email} onChange = {(e) => handleInputChange(e)} required/>
                     <label className='login-label' htmlFor='password'>Hasło</label>
-                    <input className="inputs" id='password' type='password' required/>
+                    <input className="inputs" id='password' type='password' value={password} onChange = {(e) => handleInputChange(e)} minLength='6' required/>
                 </div>
                 <form className='login-form__buttons'>
                     <a className='login-form__button form-register' href='#'>Załóż konto</a>
-                    <a className='login-form__button form-login' href='#'>Zaloguj się</a>
+                    <button onClick={() => loginHandler()} type='submit' className='login-form__button form-login' href='#'>Zaloguj się</button>
                 </form>
             </div>
         </div>
