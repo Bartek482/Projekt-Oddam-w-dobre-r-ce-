@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Decoration from "../../assets/Decoration.svg"
 export function HomeHeader () {
     return (
@@ -6,7 +7,7 @@ export function HomeHeader () {
                 <div className='background-header'></div>
                 <div className='function-header'>
                     <ul className='login_and_register'>
-                            <li className='login-button'>Zaloguj</li>
+                            <Link to='/login' className='login-button'>Zaloguj</Link>
                             <li className='login-button'>Załóż konto</li>
                     </ul>
                     <nav className='nav-buttons'>

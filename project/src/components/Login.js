@@ -3,7 +3,7 @@ import Decoration from "../assets/Decoration.svg"
 
 export function Login() {
     return (
-        <>
+        <div className='login-site'>
             <div className='function-header'>
                 <ul className='login_and_register'>
                     <li className='login-button'>Zaloguj</li>
@@ -31,6 +31,6 @@ export function Login() {
                     <a className='login-form__button form-login' href='#'>Zaloguj się</a>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
