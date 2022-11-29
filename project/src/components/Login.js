@@ -5,6 +5,9 @@ export function Login() {
 
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
+    const [error, setError] = useState(null);
+
+
 
     const handleInputChange = (e) => {
         const {id, value} = e.target;
@@ -15,13 +18,15 @@ export function Login() {
             setPassword(value);
         }
     }
-    const loginHandler = () => {
+    const loginHandler = (e) => {
+        e.preventDefault()
         let obj = {
             email: email,
             password: password
         }
         if (password.length <= 6) {
             console.log('hasło za krotkie');
+            setError('Hasło za krótkie');
         } else {
             console.log('wszystko ok');
         }
@@ -50,10 +55,11 @@ export function Login() {
                     <input className="inputs" id='email' type='email' value={email} onChange = {(e) => handleInputChange(e)} required/>
                     <label className='login-label' htmlFor='password'>Hasło</label>
                     <input className="inputs" id='password' type='password' value={password} onChange = {(e) => handleInputChange(e)} minLength='6' required/>
+                    <div>{error && <p>{error}</p>}</div>
                 </div>
-                <form className='login-form__buttons'>
+                <form onSubmit={loginHandler} className='login-form__buttons'>
                     <a className='login-form__button form-register' href='#'>Załóż konto</a>
-                    <button onClick={() => loginHandler()} type='submit' className='login-form__button form-login' href='#'>Zaloguj się</button>
+                    <button type='submit' className='login-form__button form-login' href='#'>Zaloguj się</button>
                 </form>
             </div>
         </div>

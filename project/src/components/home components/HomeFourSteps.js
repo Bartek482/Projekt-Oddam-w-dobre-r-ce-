@@ -1,5 +1,6 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
+import { Link as ScrollLink } from "react-scroll"
 import Decoration from "../../assets/Decoration.svg"
 import Shirt from "../../assets/Icon-1.svg"
 import Bag from "../../assets/Icon-2.svg"
