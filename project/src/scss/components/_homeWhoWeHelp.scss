@@ -3,9 +3,14 @@
   height: 100vh;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   text-align: center;
   color: $color-gray;
+}
+
+.who-we-help__container {
+  width: 50%;
+  align-self: center;
 }
 
 .who-we-help__header {
@@ -29,8 +34,27 @@
   justify-content: center;
   align-items: center;
   margin: 30px;
+  background: none;
+  border: none;
 }
 
 .button__active {
   border: 1px solid $color-light-gray;
+  height: 75px;
+}
+
+.who-we-help-list__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.who-we-help-list__header {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  width: 700px;
+  text-align: center;
 }

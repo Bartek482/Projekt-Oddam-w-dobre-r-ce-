@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Switch, Routes, Route } from "react-router-dom"
+import {Outlet} from "react-router-dom";
 import { HomeHeader } from "./home components/HomeHeader"
 import { HomeThreeColumns } from "./home components/HomeThreeColumns"
 import { HomeFourSteps } from "./home components/HomeFourSteps"
