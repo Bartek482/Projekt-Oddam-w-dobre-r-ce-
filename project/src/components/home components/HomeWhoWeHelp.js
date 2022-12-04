@@ -11,7 +11,7 @@ const obj = {
 }
 
 export function HomeWhoWeHelp() {
-    const [data, setData] = useState(obj.fundacje);
+    const [data, setData] = useState(obj.fundacje)
     return (
         <div className='home-who-we-help'>
             <div className='who-we-help__container'>
