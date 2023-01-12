@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom"
 import { Home } from "./components/Home"
 import { Login } from "./components/Login"
-import { WhoWeHelpFundations } from "./components/home components/WhoWeHelpFundations"
+import { Register } from "./components/Register";
 
 
 function App() {
@@ -14,6 +14,9 @@ function App() {
                 </Route>
 
                 <Route path="/login" element={<Login />}>
+                </Route>
+
+                <Route path="/register" element={<Register />}>
                 </Route>
             </Routes>
         </Router>

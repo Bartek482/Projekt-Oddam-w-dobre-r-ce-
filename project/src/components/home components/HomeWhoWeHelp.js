@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import decoration from "../../assets/Decoration.svg"
+import React, { useState } from "react"
 import { WhoWeHelpFundations } from "./WhoWeHelpFundations"
 import { WhoWeHelpOrganizations } from "./WhoWeHelpOrganizations"
 import { WhoWeHelpLocals } from "./WhoWeHelpLocals"
+import decoration from "../../assets/Decoration.svg"
 
 const obj = {
-    fundacje:[<WhoWeHelpFundations />],
+    fundacje: [<WhoWeHelpFundations />],
     organizacje: [<WhoWeHelpOrganizations />],
     zbiorki: [<WhoWeHelpLocals />]
 }
@@ -22,7 +22,6 @@ export function HomeWhoWeHelp() {
                     <img src={decoration} />
                 </div>
                 <div className='who-we-help__buttons'>
-
                     <button
                         className='who-we-help__button button__active'
                         onClick={() => setData(obj.fundacje)}>

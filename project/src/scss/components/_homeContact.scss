@@ -1,0 +1,46 @@
+.home-contact {
+  max-width: 1850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  position: relative;
+}
+
+.home-contact__background {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.home-contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 850px;
+}
+
+.home-contact__header {
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.home-contact__decoration {
+  margin-top: 30px;
+}
+
+.home-contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 500px;
+  gap: 10px;
+}
+
+.contact-input {
+  border-bottom: 2px solid $color-light-gray;
+  width: 50%;
+}

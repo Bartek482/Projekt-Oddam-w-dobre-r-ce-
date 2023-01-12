@@ -27,6 +27,18 @@ margin: 0 auto;
   justify-content: center;
 }
 
+.register-box {
+  width: 381px;
+  height: 303px;
+  font-weight: 600;
+  margin-top: 50px;
+  color: $color-gray;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .inputs {
   border: none;
   background-color: $color-white;
@@ -57,4 +69,10 @@ margin: 0 auto;
 
 .login-form__button {
   padding: 15px 10px;
+}
+
+.login-error {
+  color: red;
+  margin-left: 65px;
+  font-size: 14px;
 }

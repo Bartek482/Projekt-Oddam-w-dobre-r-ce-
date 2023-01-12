@@ -1,13 +1,15 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
 import decoration from "../assets/Decoration.svg"
+import {Link} from "react-router-dom";
 
-export function Login() {
+export function Register() {
 
     const [email, setEmail] = useState(null)
     const [password, setPassword] = useState(null)
+    const [repeatPassword, setRepeatPassword] = useState(null)
     const [error, setError] = useState(null)
     const [emailError, setEmailError] = useState(null)
+    const [passwError, setPasswError] = useState(null)
 
 
 
@@ -19,12 +21,16 @@ export function Login() {
         if (id === 'password') {
             setPassword(value)
         }
+        if (id === 'repeatPassword') {
+            setRepeatPassword(value)
+        }
     }
-    const loginHandler = (e) => {
+    const registerHandler = (e) => {
         e.preventDefault()
         let obj = {
             email: email,
-            password: password
+            password: password,
+            repeatPassword: repeatPassword
         }
 
         if (email.includes('@')) {
@@ -37,6 +43,12 @@ export function Login() {
             setError('Podane hasło jest za krótkie')
         } else {
             console.log('wszystko ok')
+        }
+
+        if (repeatPassword === password) {
+            console.log('okk')
+        } else {
+            setPasswError('Hasła się nie zgadzają')
         }
     }
 
@@ -56,19 +68,22 @@ export function Login() {
                 </nav>
             </div>
             <div className='login-container'>
-                <h1 className='login-title'>Zaloguj się</h1>
+                <h1 className='login-title'>Załóż konto</h1>
                 <div><img src={decoration}/></div>
-                <div className='login-box'>
+                <div className='register-box'>
                     <label className='login-label' htmlFor='email'>Email</label>
                     <input className="inputs" id='email' type='email' value={email} onChange = {(e) => handleInputChange(e)} required/>
                     <div className='login-error'>{emailError && <p>{emailError}</p>}</div>
                     <label className='login-label' htmlFor='password'>Hasło</label>
                     <input className="inputs" id='password' type='password' value={password} onChange = {(e) => handleInputChange(e)} minLength='6' required/>
                     <div className='login-error'>{error && <p>{error}</p>}</div>
+                    <label className='login-label' htmlFor='reapetPassword'>Powtórz hasło</label>
+                    <input className="inputs" id='repeatPassword' type='password' value={repeatPassword} onChange = {(e) => handleInputChange(e)} minLength='6' required/>
+                    <div className='login-error'>{passwError && <p>{passwError}</p>}</div>
                 </div>
-                <form onSubmit={loginHandler} className='login-form__buttons'>
-                    <Link to='/register' className='login-form__button form-register'>Załóż konto</Link>
-                    <button type='submit' className='login-form__button form-login' href='#'>Zaloguj się</button>
+                <form onSubmit={registerHandler} className='login-form__buttons'>
+                    <Link to='/login' className='login-form__button form-register'>Zaloguj się</Link>
+                    <button type='submit' className='login-form__button form-login' href='#'>Załóż konto</button>
                 </form>
             </div>
         </div>
